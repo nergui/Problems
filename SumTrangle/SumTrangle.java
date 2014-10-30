@@ -7,18 +7,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class SumTrangle {
-	public static ArrayList<Integer> beforeList=new ArrayList<>();
-	public static int[][] list=new int[1000][1000];
 	
-
-
+	public static int[][] list=new int[1000][1000];
 	public static void main(String[] args)  {
 		 try {
 		        File file = new File(args[0]);
 		        BufferedReader in = new BufferedReader(new FileReader(file));
 		        String line;
 		        int i=0;
-		        int j=0;
+		       
 		        while ((line = in.readLine()) != null) {
 		        	
 		     		ArrayInit(line,i);
